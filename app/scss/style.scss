@@ -1,0 +1,134 @@
+@import "variables";
+@import "globals";
+@import "glass";
+
+body{
+    background: $bkgPrimary;
+    height: 100vh;
+    color: $white;
+    // border: 1px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+::selection {
+    background: rgba(240, 240, 255, 0.212);
+}
+
+.main-container{
+    width: 1440px;
+    height: max-content;
+}
+
+.nav-container{
+    position: sticky;
+    top: 0;
+    background: $bkgPrimary;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    box-shadow: 0 0px 20px 20px #090b11;
+    border: none;
+
+    .logo{
+        a{
+            line-height: 0;
+        }
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 2.5rem;
+            margin-right: 1rem;
+        }
+
+        .title{
+            font-weight: 400;
+        }
+    }
+
+    .nav-buttons{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+}
+
+.text{
+    width: 900px;
+    .h2{
+        width: 900px;
+        font-weight: 600;
+    }
+}
+
+.cta-box{
+    display: flex;
+    // border: 1px solid;
+    width: max-content;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    .bmc-btn, .cta{
+        height: 40px !important;
+        background: $bluePrimary;
+        padding: 0.5rem 1rem;
+        border-radius: $borderRadius;
+        transition: all 100ms ease;
+        display: flex;
+        font-size: 1rem;
+        align-items: center;
+    }
+
+    .bmc-btn-text{
+        font-weight: 400 !important;
+    }
+}
+
+.generators{
+    overflow: hidden;
+    margin: 1rem 0;
+    // border: 1px solid rgba(255, 255, 255, 0.233);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2rem;
+    
+    .generator{
+        background: $bkgSecondary;
+        border-radius: 0.5rem;
+        width: 300px;
+        height: 270px;
+        border:  2px solid $bluishWhite;
+        transition: all 100ms ease;
+        
+        .example{
+            border-radius: 0.2rem 0.2rem 0 0; 
+            width: 100%;
+            margin: 0;
+        }
+        
+        .name-of-generator{
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            height: 55px;
+            letter-spacing: 2px;
+        }
+    }
+
+    .generator:hover{
+        background: $bkgPrimary;
+    }
+}
+
+.footer{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}

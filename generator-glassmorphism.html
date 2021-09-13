@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app/scss/style.css">
+    <title>Glassmorphism</title>
+</head>
+<body>
+    <div class="main-container">
+        <section class="nav-container">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <div class="title h4 ls2">WEB CODE GENERATORS</div>
+            </div>
+            <div class="nav-buttons">
+                <a class="h5" href="/index.html">Home</a>
+                <a class="h5" href="#">About</a>
+                <a class="h5 cta" href="#">Contact Us</a>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="text p2">
+                <div class="h2">
+                    Glassmorphism Generators
+                </div>
+                Glassmorphism is a term used to describe UI design that emphasises light or dark objects, placed on top of colourful backgrounds. A background-blur is placed on the objects which allows the background to shine through – giving it the impression of frosted glass.
+            </div>
+            <div class="cta-box">
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="swarajs" data-color="#FFDD00" data-emoji="" data-font="Inter" data-text="Buy us a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+                <a class="h5 cta" href="#">Contact Us</a>
+            </div>
+        </section>
+        <section>
+                <div class="control-panel">
+                    <div class="changes">
+                        <div class="change color"  style="width: max-content; gap: 20px;">
+                            <div class="change-name">Color</div>
+                            <input type="color" id="color" value="#ffffff">
+                        </div>
+                        <div class="change border-radius-value">
+                            <div class="change-name">Border Radius</div>
+                            <input type="range" min="0" max="40" value="12" id="inputBorderRadius">
+                            <div id="borderRadiusChangeValue changeValue">12</div>
+                        </div>
+                        <div class="change blur-value">
+                            <div class="change-name">Blur Value</div>
+                            <input type="range" min="0" max="30" value="16" id="inputBlur">
+                            <div id="blurChangeValue  changeValue">16</div>
+                        </div>
+                        <div class="change opcaity">
+                            <div class="change-name">Opcaity</div>
+                            <input type="range" min="0" max="100" value="13" id="inputOpacity">
+                            <div id="opacityChangeValue changeValue">13</div>
+                        </div>
+                        <div class="change saturation">
+                            <div class="change-name">Saturation</div>
+                            <input type="range" min="0" max="200" value="180" id="inputSaturation">
+                            <div id="saturationChangeValue" class="changeValue">180</div>
+                        </div>
+                    </div>
+
+                    <div class="preview-code">
+
+
+                        <div class="code-container">
+                            <div class="code">
+                                <div class="code-title">CSS</div>
+                                <pre class="css-code" id="code">
+<span class="comment">// Styles for Glassmorhpism Card</span>
+<span class="comment">// Copy the code below</span>
+
+.<span class="class">selector</span>{
+    <span class="property">backdrop-filter</span>: blur(<span class="blur-value" id="blur-value">16</span>px) saturate(<span class="saturation-value" id="saturation-value">180%</span>);
+    <span class="property">-webkit-backdrop-filter</span>: blur(<span class="blur-value" id="blur-value2">16</span>px) saturate(<span class="saturation-value" id="saturation-value2">180</span>%);
+    <span class="property">background-color</span>: <span class="backgroundColor-value" id="backgroundColor-value">rgba(43, 43, 43, 0.452)</span>;
+    <span class="property">border-radius</span>: <span class="border-radius-value" id="border-radius-value">12px</span>;
+    <span class="property">border</span>: 1px solid rgba(255, 255, 255, 0.125);
+    <span class="property">box-shadow</span>: 0 0 5px rgba(255, 255, 255, 0.212),
+                inset 0 0 5px rgba(255, 255, 255, 0.363),
+                0 10px 40px rgba(0, 0, 0, 0.5);
+}</pre>
+                            </div>
+                        </div>
+                        
+                        <div class="preview-container">
+                            <div class="prev">
+                                <div class="card" id="card">
+                                    <div class="card-name">Ken Adams</div>
+                                    <div class="card-details">
+                                        <div style="width: 100%;">
+                                            <div class="number">xxxx xxxx xxxx xxxx</div>
+                                            <div class="details">
+                                                <div>1681131984984651</div>
+                                                <div>05/32</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="footer">
+            <div class="h3">
+                This is Footer
+            </div>
+        </section>
+        <script src="app/js/index.js"></script>
+    </div>
+</body>
+</html>

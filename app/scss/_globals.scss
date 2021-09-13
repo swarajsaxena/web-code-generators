@@ -1,0 +1,109 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    font-family: 'Inter', sans-serif;
+}
+
+section{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+    padding: 2.5rem 1rem;
+}
+
+.h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+}
+
+.h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875rem;
+}
+
+.h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.563rem;
+}
+
+.h5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.p1{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.563rem;
+    letter-spacing: 2px;
+}
+
+.p2{
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.ls2{
+    letter-spacing: 2px;
+}
+
+a{
+    color: $white;
+    text-decoration: none;
+    transition: all 100ms ease-in;
+    letter-spacing: 2px;
+}
+
+a:hover{
+    color: $bluePrimary;
+}
+
+.cta{
+    background: $bluePrimary;
+    padding: 0.5rem 1rem;
+    border-radius: $borderRadius;
+    transition: all 100ms ease;
+}
+
+.cta:hover{
+    background: $white;
+    color: black !important;
+}
+
+// CODE COLOURS 
+
+.css-code{
+    color: rgba(255, 255, 255, 0.788);
+    font-weight: 400;
+    font-family: 'Fira Mono', monospace;
+    line-height: 2;
+    letter-spacing: 0.5px;
+
+    span{
+        font-family: 'Fira Mono', monospace;
+    }
+
+    .comment{
+        color: #808080;
+    }
+    .class{
+        color: #ff4800;
+        font-weight: 600 ;
+    }
+    .property{
+        color: #3385ff;
+        font-weight: 500;
+    }
+}
