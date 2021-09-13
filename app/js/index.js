@@ -7,8 +7,11 @@ const color = document.getElementById('color')
 
 // values in changes 
 const borderRadiusChangeValue = document.getElementById('borderRadiusChangeValue')
+console.log(borderRadiusChangeValue);
 const blurChangeValue = document.getElementById('blurChangeValue')
+console.log(blurChangeValue);
 const opacityChangeValue = document.getElementById('opacityChangeValue')
+console.log(opacityChangeValue);
 const saturationChangeValue = document.getElementById('saturationChangeValue')
 
 // values in code
