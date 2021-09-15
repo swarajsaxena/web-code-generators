@@ -3,33 +3,40 @@
 @import "glass";
 
 body{
-    background: $bkgPrimary;
+    background: #090B11;
     height: 100vh;
-    color: $white;
     // border: 1px solid white;
     display: flex;
     justify-content: center;
 }
 
-::selection {
-    background: rgba(240, 240, 255, 0.212);
-}
+// ::selection {
+//     background: rgba(240, 240, 255, 0.212);
+// }
 
 .main-container{
-    width: 1440px;
+    width: 100%;
     height: max-content;
+    // border: 1px solid white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.outer-section{
+    border: 1px solid white;
+    width: 100%;
 }
 
 .nav-container{
     position: sticky;
     top: 0;
-    background: $bkgPrimary;
+    background: #090B11;
     padding: 1rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1;
-    box-shadow: 0 0px 20px 20px #090b11;
     border: none;
 
     .logo{
@@ -45,7 +52,7 @@ body{
         }
 
         .title{
-            font-weight: 400;
+            font-weight: 500;
         }
     }
 
@@ -53,15 +60,23 @@ body{
         display: flex;
         align-items: center;
         gap: 1.5rem;
+        font-weight: 500;
     }
+    
+}
 
+.description{
+    // padding: 0 2rem;
+    // padding-left: 2rem;
+    // padding-right: 2rem;
 }
 
 .text{
     width: 900px;
+    font-weight: 400;
     .h2{
         width: 900px;
-        font-weight: 600;
+        font-weight: 550;
     }
 }
 
@@ -72,58 +87,106 @@ body{
     gap: 2rem;
     justify-content: space-between;
     margin-top: 2rem;
+    
+    .bmc-btn svg {
+        height: 28px !important;
+        margin-bottom: 0px !important;
+        box-shadow: none !important;
+        border: none !important;
+        vertical-align: middle !important;
+        transform: scale(0.9);
+        flex-shrink: 0;
+    }
 
+    
     .bmc-btn, .cta{
         height: 40px !important;
-        background: $bluePrimary;
         padding: 0.5rem 1rem;
         border-radius: $borderRadius;
         transition: all 100ms ease;
-        display: flex;
+        // display: flex;
         font-size: 1rem;
         align-items: center;
     }
-
+    
     .bmc-btn-text{
-        font-weight: 400 !important;
+        font-weight: 600 !important;
+        color: $bkgSecondary;
     }
 }
 
+.css-generator .h3{
+    // margin-left: 0.7rem;
+    // margin-bottom: 3rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
 .generators{
+    // border: 1px solid;
+    place-items: center;
     overflow: hidden;
     margin: 1rem 0;
-    // border: 1px solid rgba(255, 255, 255, 0.233);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 2rem;
+    // border: 1px solid rgb(32, 5, 5);
+    padding: 1rem 0;
+    display: grid;
+    
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    
+    gap: 1.5rem;
+
+    
+    .border-design{
+        background: linear-gradient( 90deg,#22252b00, #181a2000);
+        padding: 2px;
+        border-radius: 1.1rem;
+        transition: all 0.15s ease-in-out;
+    }
     
     .generator{
-        background: $bkgSecondary;
-        border-radius: 0.5rem;
-        width: 300px;
-        height: 270px;
-        border:  2px solid $bluishWhite;
-        transition: all 100ms ease;
+        background: linear-gradient(90deg, #101114, rgba(37, 36, 49, 0.575));
+        padding: 1rem;
+        border-radius: 1rem;
+        gap: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid;
+        justify-content: space-between;
         
-        .example{
-            border-radius: 0.2rem 0.2rem 0 0; 
+        img{
             width: 100%;
-            margin: 0;
+            border-radius: 0.5rem;
         }
-        
         .name-of-generator{
-            display: flex;
-            align-items: center;
-            justify-content: center; 
-            height: 55px;
+            font-size: 1.2rem;
+            font-weight: 500;
             letter-spacing: 2px;
         }
+        .des-of-generator{
+            font-size: 1rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+    
+        .cta{
+            width: max-content;
+        }
+    
+        .cta:hover{
+            background: none;
+            
+        }
+    
     }
+}
 
-    .generator:hover{
-        background: $bkgPrimary;
-    }
+
+
+
+.border-design:hover{
+    transform: translateY(-15px);
+    background: linear-gradient( 90deg,#22252b, #181A20);
+    
 }
 
 .footer{

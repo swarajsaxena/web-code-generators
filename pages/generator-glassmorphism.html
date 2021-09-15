@@ -22,7 +22,7 @@
         <section class="nav-container">
             <div class="logo">
                 <a href="/index.html">
-                    <img src="/images/logo.png" alt="">
+                    <img src="/images/logo.svg" alt="">
                 </a>
                 <div class="title h4 ls2">WEB CODE GENERATORS</div>
             </div>
@@ -47,39 +47,51 @@
         </section>
         <section>
                 <div class="control-panel">
-                    <div class="changes">
-                        <div class="change color"  style="width: max-content; gap: 20px;">
-                            <div class="change-name">Color</div>
-                            <input type="color" id="color" value="#ffffff">
+                    <div class="tweaks">
+                        <div class="sec-title">Changes</div>
+                        <div class="first-row">
+                            <div class="change color"  style="width: max-content; gap: 20px;">
+                                <div class="change-name">Color</div>
+                                <input type="color" id="color" value="#ffffff">
+                            </div>
+                            <div class="change url">
+                                <div class="change-name">Background URL</div>
+                                <input type="text" name="" id="url" placeholder="Type your URL your..">
+                                <div class="cta" id="set-img">Set Image</div>
+                            </div>
                         </div>
-                        <div class="change border-radius-value">
-                            <div class="change-name" style="width: 120px;">Border Radius</div>
-                            <input type="range" min="0" max="40" value="12" id="inputBorderRadius">
-                            <div id="borderRadiusChangeValue" class="changeValue">12</div>
-                        </div>
-                        <div class="change blur-value">
-                            <div class="change-name">Blur Value</div>
-                            <input type="range" min="0" max="30" value="16" id="inputBlur">
-                            <div id="blurChangeValue" class="changeValue">16</div>
-                        </div>
-                        <div class="change opcaity">
-                            <div class="change-name">Opcaity</div>
-                            <input type="range" min="0" max="100" value="13" id="inputOpacity">
-                            <div id="opacityChangeValue" class="changeValue">13</div>
-                        </div>
-                        <div class="change saturation">
-                            <div class="change-name">Saturation</div>
-                            <input type="range" min="0" max="200" value="180" id="inputSaturation">
-                            <div id="saturationChangeValue" class="changeValue">180</div>
+                        <div class="changes">
+                            
+                            <div class="change border-radius-value">
+                                <div class="change-name" style="width: 120px;">Border Radius</div>
+                                <input type="range" min="0" max="40" value="12" id="inputBorderRadius">
+                                <div id="borderRadiusChangeValue" class="changeValue">12</div>
+                            </div>
+                            <div class="change blur-value">
+                                <div class="change-name">Blur Value</div>
+                                <input type="range" min="0" max="30" value="16" id="inputBlur">
+                                <div id="blurChangeValue" class="changeValue">16</div>
+                            </div>
+                            <div class="change opcaity">
+                                <div class="change-name">Opcaity</div>
+                                <input type="range" min="0" max="100" value="13" id="inputOpacity">
+                                <div id="opacityChangeValue" class="changeValue">13</div>
+                            </div>
+                            <div class="change saturation">
+                                <div class="change-name">Saturation</div>
+                                <input type="range" min="0" max="200" value="180" id="inputSaturation">
+                                <div id="saturationChangeValue" class="changeValue">180</div>
+                            </div>
                         </div>
                     </div>
+                    
 
                     <div class="preview-code">
 
 
                         <div class="code-container">
                             <div class="code">
-                                <div class="code-title">CSS</div>
+                                <div class="sec-title">CSS</div>
                                 <pre class="css-code" id="code">
 <span class="comment">// Styles for Glassmorhpism Card</span>
 <span class="comment">// Copy the code below</span>
@@ -98,15 +110,19 @@
                         </div>
                         
                         <div class="preview-container">
-                            <div class="prev">
-                                <div class="card" id="card">
-                                    <div class="card-name">Ken Adams</div>
-                                    <div class="card-details">
-                                        <div style="width: 100%;">
-                                            <div class="number">xxxx xxxx xxxx xxxx</div>
-                                            <div class="details">
-                                                <div>1681131984984651</div>
-                                                <div>05/32</div>
+                            <div class="preview">
+                                <div class="sec-title">Preview</div>
+                                <div class="prev" id="prev">
+
+                                    <div class="card" id="card">
+                                        <div class="card-name">Ken Adams</div>
+                                        <div class="card-details">
+                                            <div style="width: 100%;">
+                                                <div class="number">xxxx xxxx xxxx xxxx</div>
+                                                <div class="details">
+                                                    <div>1681131984984651</div>
+                                                    <div>05/32</div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -121,7 +137,8 @@
                 This is Footer
             </div>
         </section>
-        <script src="/app/js/index.js"></script>
+        <script src="/app/js/index.js"></script> 
+        <script src="/app/js/glassMorphism.js"></script> 
     </div>
 </body>
 </html>
