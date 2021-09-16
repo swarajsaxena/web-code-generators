@@ -110,6 +110,28 @@ a:hover {
   font-weight: 500;
 }
 
+@media only screen and (max-width: 600px) {
+  section {
+    padding: 1rem 1rem;
+    width: 100vw;
+  }
+  .h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .h3 {
+    font-size: 1.5rem;
+  }
+  .h4 {
+    font-size: 1rem;
+  }
+  .p2 {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+}
+
 .control-panel .tweaks {
   background: #161b29;
   padding: 1rem;
@@ -609,5 +631,141 @@ body {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .nav-buttons a {
+    display: none;
+  }
+  .text {
+    width: 100%;
+    font-weight: 400;
+  }
+  .text .h2 {
+    width: 100%;
+    font-weight: 550;
+  }
+  .cta-box {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .cta-box .bmc-btn svg {
+    height: 20px !important;
+  }
+  .cta-box .bmc-btn, .cta-box .cta {
+    height: none !important;
+    padding: 0.5rem 0.6rem;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    font-weight: 500 !important;
+  }
+  .cta-box .bmc-btn-text {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    color: #080b18;
+  }
+  .css-generator .h3 {
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .generators {
+    margin: 0;
+    padding: 1rem 0;
+    -ms-grid-columns: (minmax(0, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    place-items: center;
+  }
+  .generators .generator {
+    border-radius: 0.4rem;
+    padding: 0.7rem;
+    background: #303643;
+    gap: 1rem;
+    width: 100%;
+  }
+  .generators .generator img {
+    width: 100%;
+    border-radius: 0.2rem;
+  }
+  .generators .generator .name-of-generator {
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .generators .generator .cta {
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+    min-width: 100%;
+    text-align: center;
+  }
+  .generators .generator .cta:hover {
+    background: none;
+  }
+  .border-design:hover {
+    -webkit-transform: none;
+            transform: none;
+    background: none;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .text {
+    width: 100%;
+    font-weight: 400;
+  }
+  .text .h2 {
+    width: 100%;
+    font-weight: 550;
+  }
+  .css-generator .h3 {
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .generators {
+    -ms-grid-columns: (minmax(0, 1fr))[1];
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+  }
+  .generators .generator {
+    border-radius: 0.4rem;
+    padding: 1rem;
+    background: #303643;
+    gap: 1rem;
+    width: 100%;
+  }
+  .generators .generator img {
+    width: 100%;
+    border-radius: 0.2rem;
+  }
+  .generators .generator .name-of-generator {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .generators .generator .cta {
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    min-width: 100%;
+    text-align: center;
+  }
+  .generators .generator .cta:hover {
+    background: none;
+  }
+  .border-design:hover {
+    -webkit-transform: none;
+            transform: none;
+    background: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
