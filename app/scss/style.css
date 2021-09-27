@@ -162,7 +162,7 @@ a:hover {
 
 .control-panel-neumorphism .preview-changes .preview-container .prev, .control-panel-neumorphism .preview-changes .changes-container .prev {
   height: 420px;
-  background: white;
+  background: #d3d4d3;
   width: 100%;
   border-radius: 0.25rem;
   display: -webkit-box;
@@ -181,7 +181,7 @@ a:hover {
   height: 210px;
   width: 210px;
   border-radius: 50%;
-  background: #ffffff;
+  background: #d3d4d3;
   -webkit-box-shadow: 50px 50px 100px #666666, -50px -50px 100px #ffffff;
           box-shadow: 50px 50px 100px #666666, -50px -50px 100px #ffffff;
 }

@@ -54,7 +54,7 @@ size_slide.oninput = (() => {
 
 radius_slide.oninput = (() => {
 
-  let radius = radius_slide.value * 10;
+  let radius = radius_slide.value;
   radius_val.innerHTML = radius;
   shape.style.borderRadius = radius + '%';
   br_code.innerHTML = radius + '%';

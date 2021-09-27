@@ -14,19 +14,20 @@
             .prev{
                 
                 height: 420px;
-                background: white;
+                background: #d3d4d3;
                 width: 100%;
                 border-radius: 0.25rem;
                 display: flex;
                     justify-content: center;
                     align-items: center;
                     overflow: hidden;
+
                 .shape_preview{
                     
                     height: 210px;
                     width: 210px;
                     border-radius: 50%;
-                    background: #ffffff;
+                    background: #d3d4d3;
                     box-shadow:  50px 50px 100px #666666,
                                  -50px -50px 100px #ffffff;
                     
@@ -65,10 +66,6 @@
             
             
             .bar{
-
-
-
-                
                     background: hsla(208, 33%, 90%, 0.129);
                     width: 100%;
                     // margin: .9rem .9rem .9rem ;
@@ -79,8 +76,6 @@
                     // flex-direction: column;
                     align-items: center;
                     border-radius: 0.2rem;
-
-            
             }
             input{
 
@@ -90,9 +85,7 @@
             .bigger{
                 // margin-top: 20px;
                 display: flex;
-                justify-content: space-between;
-                
-
+                justify-content: space-between;     
             }
             
             .container{
