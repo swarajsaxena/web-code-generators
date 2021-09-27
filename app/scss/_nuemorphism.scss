@@ -1,0 +1,183 @@
+.control-panel-neumorphism{
+
+    .preview-changes{
+        display: flex;
+        gap: 2rem;
+
+        .preview-container, .changes-container{
+            width: 100%;
+            background: #161b29;
+            // border: 1px solid white;
+            height: max-content;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            .prev{
+                
+                height: 420px;
+                background: white;
+                width: 100%;
+                border-radius: 0.25rem;
+                display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                .shape_preview{
+                    
+                    height: 210px;
+                    width: 210px;
+                    border-radius: 50%;
+                    background: #ffffff;
+                    box-shadow:  50px 50px 100px #666666,
+                                 -50px -50px 100px #ffffff;
+                    
+                }
+            }
+        }
+        
+        .changes{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            // align-items: ;
+            // justi
+            width: 100%;
+            height: max-content;
+            justify-content: space-between;
+
+            .clr{
+                padding-left: .9rem;
+                background: hsla(208, 33%, 90%, 0.129);
+                display: flex;
+                align-items: center;
+                // margin: .9rem .9rem;
+                width: fit-content;
+               
+                input{
+                    background: none;
+                    border: none;
+                    margin: .9rem .9rem .9rem ;
+                    display: inline;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            
+            
+            
+            .bar{
+
+
+
+                
+                    background: hsla(208, 33%, 90%, 0.129);
+                    width: 100%;
+                    // margin: .9rem .9rem .9rem ;
+                    height: 40px;
+                    padding: 0 1rem;
+                    display: flex;
+                    gap: 1rem;
+                    // flex-direction: column;
+                    align-items: center;
+                    border-radius: 0.2rem;
+
+            
+            }
+            input{
+
+                width: 100%;
+            }
+           
+            .bigger{
+                // margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                
+
+            }
+            
+            .container{
+                width: 100px;
+                height: 100px;
+                /* border: 1px solid white; */
+                // margin: 0 30px;
+                border-radius: 0.5rem;
+                background: #b9bbe4;
+                display: grid;
+                place-items: center;
+                opacity: 50%;
+                transition: all 100ms ease-in-out;
+                cursor: pointer;
+            }
+    
+            .active{
+                opacity: 100%;
+            }
+    
+            .container:hover{
+                opacity: 90%;
+            }
+    
+            .shape{
+                width: 75px;
+                height: 75px;
+                border-radius: 50%;
+                background: black;
+                background: #b9bbe4;
+            }
+    
+            .flat{
+                border-radius: 44px;
+                background: #b9bbe4;
+                box-shadow:  6px 6px 12px #9496b6,
+                            -6px -6px 12px #dee0ff;
+            }
+    
+            .concave{
+                border-radius: 44px;
+                background: linear-gradient(145deg, #a7a8cd, #c6c8f4);
+                box-shadow:  6px 6px 12px #9496b6,
+                            -6px -6px 12px #dee0ff;
+            }
+    
+            .convex{
+                border-radius: 44px;
+                background: linear-gradient(145deg, #c6c8f4, #a7a8cd);
+                box-shadow:  6px 6px 12px #9496b6,
+                            -6px -6px 12px #dee0ff;
+            }
+    
+            .pressed{
+                border-radius: 44px;
+                background: #b9bbe4;
+                box-shadow: inset 6px 6px 12px #9496b6,
+                            inset -6px -6px 12px #dee0ff;
+            }
+        }
+      
+      
+    }
+    .bkg{
+        min-width: max-content;
+            padding: 1rem;
+            border-radius: 0.2rem;
+            height: 100%;
+            margin-top: 2rem;
+            background: hsla(208, 33%, 90%, 0.129);
+    }
+    .code{
+        // border: 1px solid white;
+        padding: 2rem;
+        margin-top: 2rem;
+        border-radius: 0.5rem;
+        background: #161b29;
+        .inline{
+            display: inline;
+        }
+       
+    }
+}
+
+
+input{
+    border: 1px solid white;
+}

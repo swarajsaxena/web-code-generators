@@ -1,21 +1,16 @@
 @import "variables";
 @import "globals";
+@import "nuemorphism";
 @import "glass";
 
 body{
     background: #090B11;
     height: 100vh;
-    // border: 1px solid white;
     display: flex;
     justify-content: center;
 }
 
-// ::selection {
-//     background: rgba(240, 240, 255, 0.212);
-// }
-
 .main-container{
-    width: 100%;
     height: max-content;
     // border: 1px solid white;
     display: flex;
@@ -23,20 +18,12 @@ body{
     flex-direction: column;
 }
 
-.outer-section{
-    border: 1px solid white;
-    width: 100%;
-}
-
 .nav-container{
-    position: sticky;
-    top: 0;
     background: #090B11;
-    padding: 1rem 1rem;
+    padding: 1rem 1rem 0 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1;
 
     .logo{
         a{
@@ -66,22 +53,23 @@ body{
 
 .hamburger{
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     // gap: 0.5rem;
     height: 20px;
     top: 1rem;
     right: 1rem;
-    z-index: 20;
+    cursor: pointer;
+    z-index: 0;
     
     .line{
         width: 26px;
         border-radius: 1px;
         height: 2px;
         background: white;
+        transition: all 0.1s ease-in-out ;
     }
-
 }
 
 .menu-open{
@@ -122,7 +110,7 @@ body{
     background: $bkgSecondary;
     border-bottom-left-radius: 0.5rem;
     position: absolute;
-    z-index: 2;
+    z-index: 20;
     // border: 1px solid;
     top: 0;
     right: 0;
@@ -152,14 +140,22 @@ body{
     }
 }
 
-.text{
-    width: 900px;
-    font-weight: 400;
+.des-container{
+    
+    // border: 1px solid;
     .h2{
-        width: 900px;
+        // border: 1px solid;
+        width: 95%;
         font-weight: 550;
     }
+    .text{
+        // border: 1px solid;
+        width: 100%;
+        font-weight: 400;
+        
+    }
 }
+
 
 .cta-box{
     display: flex;
@@ -231,13 +227,14 @@ body{
         flex-direction: column;
         // border: 1px solid;
         justify-content: space-between;
+        max-height: max-content;
         
         img{
             width: 100%;
             border-radius: 0.5rem;
         }
         .name-of-generator{
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 500;
             letter-spacing: 2px;
         }
@@ -272,8 +269,123 @@ body{
     align-content: center;
 }
 
+@media only screen and (max-width: 1100px) and (min-width: 901px){
+    .nav-container{
+        .title{
+            // font-size: 1rem;
+        }
+        .nav-buttons{
+            .HTML, .CSS{
+                display: none;
+            }
+            a{
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
+
+    .hamburger{
+        display: flex;
+    }
+
+    .title{
+        font-size: 1rem;
+    }
+    .nav-buttons{
+        a{
+            display: none;
+        }
+    }
+
+    .text{
+        width: 100%;
+        font-weight: 400;
+        .h2{
+            width: 100%;
+            font-weight: 550;
+        }
+    }
+
+    .cta-box{
+        
+        gap: 1rem;
+        margin-top: 1rem;
+        
+        .bmc-btn svg {
+            height: 20px !important;
+        }
+        
+        .bmc-btn, .cta{
+            height: none !important;
+            padding: 0.5rem 0.6rem;
+            min-width: max-content;
+            font-weight: 500 !important;
+        }
+        
+        .bmc-btn-text{
+            // border: 1px solid;
+            width: max-content;
+            color: $bkgSecondary;
+        }
+    }
+
+    .css-generator .h3{
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .border-design{
+        border-radius: 1.1rem;
+    }
+
+    .generators{
+        margin: 0;
+        padding: 1rem;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+        place-items: center;
+        
+        .generator{
+            border-radius: 1rem;
+            padding: 0.7rem;
+            // border: 1px solid;
+            gap: 1rem;
+            width: 100%;
+            
+            img{
+                width: 100%;
+                border-radius: 0.2rem;
+            }
+            .name-of-generator{
+                font-size: 0.9rem;
+                font-weight: 500;
+                letter-spacing: 2px;
+                width: min-content;
+            }
+            
+            .cta{
+                border-radius: 0.2rem;
+                font-size: 0.8rem;
+                min-width: 100%;
+                text-align: center;
+            }
+        
+            .cta:hover{
+                background: none;
+            }
+        
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .hamburger{
+        display: flex;
+    }
 
     .title{
         font-size: 1rem;
@@ -368,6 +480,10 @@ body{
 }
 
 @media only screen and (max-width: 415px) {
+
+    .hamburger{
+        display: flex;
+    }
 
     .title{
         font-size: 1rem;
