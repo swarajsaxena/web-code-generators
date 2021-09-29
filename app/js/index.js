@@ -3,6 +3,8 @@
 const mobileNavbar = document.getElementById('mobile-navbar')
 const hamburger = document.getElementById('hamburger')
 
+
+
 hamburger.addEventListener('click', () => {
     if( hamburger.classList.contains('menu-open') ){
         mobileNavbar.classList.remove('navbar-open')

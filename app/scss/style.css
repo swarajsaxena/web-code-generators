@@ -143,6 +143,31 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+.code {
+  position: relative;
+}
+
+textarea {
+  position: absolute;
+  left: -100%;
+}
+
+.copy {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.137);
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.copy:hover {
+  background-color: rgba(255, 255, 255, 0.26);
+}
+
 .control-panel-neumorphism .preview-changes {
   display: -webkit-box;
   display: -ms-flexbox;
