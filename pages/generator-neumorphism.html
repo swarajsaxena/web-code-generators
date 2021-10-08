@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,36 +18,151 @@
     <link rel="stylesheet" href="/app/scss/style.css">
     <title>Glassmorphism</title>
 </head>
+
 <body>
     <div class="main-container">
         <section class="nav-container">
             <div class="logo">
                 <a href="/index.html">
-                    <img src="/images/logo.png" alt="">
+                    <img src="/images/logo.svg" alt="">
                 </a>
-                <div class="title h4 ls2">WEB CODE GENERATORS</div>
+                <div class="title h4 ls2">WEB CODE GENERATOR</div>
             </div>
             <div class="nav-buttons">
                 <a class="h5" href="/index.html">Home</a>
                 <a class="h5" href="#">About</a>
+                <a class="h5 HTML" href="#">HTML Generators</a>
+                <a class="h5 CSS" href="#">CSS Generators</a>
+                <a class="h5 cta" href="#">Contact Us</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div class="line first-line"></div>
+                <div class="line second-line"></div>
+                <div class="line third-line"></div>
+            </div>
+        </section>
+
+        <div class="mobile-navbar" id="mobile-navbar">
+            <a class="h5" href="/index.html">Home</a>
+            <a class="h5" href="#">About</a>
+            <a class="h5" href="#">HTML Generators</a>
+            <a class="h5" href="#">CSS Generators</a>
+            <a class="h5 cta" href="#">Contact Us</a>
+            <div class="menu-open" id="menu-open">
+                <div class="line first-line"></div>
+                <div class="line second-line"></div>
+                <div class="line third-line"></div>
+            </div>
+        </div>
+
+        <section class="description">
+            <div class="des-container">
+                <div class="h2">
+                    Welcome to Nuemorohism Generator
+                </div>
+                <div class="text p2">
+
+                    We offer you the tools for web developers. Here, you’ll find code generators to help you with your
+                    front-end web projects. If you don't see something that you wish was here, send me an email and I'll
+                    do
+                    my best to create a tool for you.
+                </div>
+            </div>
+            <div class="cta-box">
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+                    data-name="bmc-button" data-slug="swarajs" data-color="#FFDD00" data-emoji="" data-font="Inter"
+                    data-text="Buy us a coffee" data-outline-color="#000000" data-font-color="#000000"
+                    data-coffee-color="#ffffff"></script>
                 <a class="h5 cta" href="#">Contact Us</a>
             </div>
         </section>
 
-        <section class="description">
-            <div class="text p2">
-                <div class="h2">
-                    Neumorphism Generator
+        <section >
+            <div class="control-panel-neumorphism">
+                <div class="preview-changes">
+                    <div class="preview-container">
+                        <div class="sec-title">Preview</div>
+                        <div class="prev">
+                            <div class="shape_preview"></div>
+                        </div>
+                    </div>
+                    <div class="changes-container">
+                        <div class="sec-title">Changes</div>
+                        <div class="changes">
+                            <div class="clr"><label for="color">Color:</label><input class="color" value="#d4d3d3" type="color"></div>
+                            <div class="bar">
+                                <div class="b1">
+                                    <label for="size">Size:</label>
+                                </div>
+                                <input class="size" value="210" type="range" name="size" min="10" max="410">
+                                <div>
+                                    <div class="inline size_val">210</div>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <div class="b1"><label for="radius">Radius:</label>
+                                </div>
+                                <input class="radius range" type="range" value="50" name="radius" min="0" max="50">
+                                <div>
+                                    <div class="inline radius_val">50</div>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <div class="b1"><label for="distance">Distance:</label>
+                                </div>
+                                <input class="distance range" type="range" name="distance" min="5" max="50">
+                                <div>
+                                    <div class="inline distance_val">27</div>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <div class="b1"><label for="intensity">Intensity:</label>
+                                </div>
+                                <input class="intensity range" type="range" name="intensity" min="1" max="60">
+                                <div>
+                                    <div class="inline intensity_val">.6</div>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <div class="b1"><label for="blur">Blur:</label>
+                                </div>
+                                <input class="blur range" type="range" name="blur" min="0" max="100">
+                                <div>
+                                    <div class="inline blur_val">50</div>
+                                </div>
+                            </div>
+                            <!-- <div class="bigger">
+                                <div class="container" aria-label="Flat">
+                                    <div class="shape flat"></div>
+                                </div>
+                                <div class="container active" title="Concave">                  // Buttons for future purposes
+                                    <div class="shape concave"></div>
+                                </div>
+                                <div class="container" aria-label="Convex">
+                                    <div class="shape convex"></div>
+                                </div>
+                                <div class="container" aria-label="Pressed">
+                                    <div class="shape pressed"></div>
+                                </div>
+                            </div> -->
+                            
+                        </div>
+                    </div>
                 </div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet iste perspiciatis dolorum? Explicabo minus aliquam blanditiis veniam, consectetur doloribus laborum, illum quia perferendis soluta hic, maiores omnis facere. Aspernatur incidunt magni ad minus voluptatum placeat doloribus sapiente.
+                <div class="code">
+                    <div class="sec-title">CSS</div>
+                    <button class="copy" style="margin: 2rem;">Copy</button>
+                    <pre class="css-code bkg">
+.<span class="class">Selector</span>{
+        <span class="property">width</span>: <span class="width ">210px</span>;
+        <span class="property">height</span>: <span class="height">210px</span>;
+        <span class="property">border-radius</span>: <span class="br">50%</span>;
+        <span class="property">background</span>: <span class="col">#ffffff</span>;
+        <span class="property">box-shadow</span>: <span class="bs">50px 50px 100px #666,    
+            -50px -50px 100px #ffffff</span>;
+}</pre>
+                </div>
             </div>
-            <div class="cta-box">
-                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="swarajs" data-color="#FFDD00" data-emoji="" data-font="Inter" data-text="Buy us a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
-                <a class="h5 cta" href="#">Contact Us</a>
-            </div>
-        </section>
-        <section>
-            Hello this is in progress
         </section>
         <section class="footer">
             <div class="h3">
@@ -54,6 +170,9 @@
             </div>
         </section>
         <script src="/app/js/index.js"></script>
+        <script src="/app/js/nuemorohism.js"></script>
+        <script src="/app/js/CopyButton.js"></script>
     </div>
 </body>
+
 </html>

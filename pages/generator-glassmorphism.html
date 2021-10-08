@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="/app/scss/style.css">
     <title>Glassmorphism</title>
 </head>
+
 <body>
     <div class="main-container">
         <section class="nav-container">
@@ -24,75 +26,118 @@
                 <a href="/index.html">
                     <img src="/images/logo.svg" alt="">
                 </a>
-                <div class="title h4 ls2">WEB CODE GENERATORS</div>
+                <div class="title h4 ls2">WEB CODE GENERATOR</div>
             </div>
             <div class="nav-buttons">
                 <a class="h5" href="/index.html">Home</a>
                 <a class="h5" href="#">About</a>
+                <a class="h5 HTML" href="#">HTML Generators</a>
+                <a class="h5 CSS" href="#">CSS Generators</a>
+                <a class="h5 cta" href="#">Contact Us</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div class="line first-line"></div>
+                <div class="line second-line"></div>
+                <div class="line third-line"></div>
+            </div>
+        </section>
+
+        <div class="mobile-navbar" id="mobile-navbar">
+            <a class="h5" href="/index.html">Home</a>
+            <a class="h5" href="#">About</a>
+            <a class="h5" href="#">HTML Generators</a>
+            <a class="h5" href="#">CSS Generators</a>
+            <a class="h5 cta" href="#">Contact Us</a>
+            <div class="menu-open" id="menu-open">
+                <div class="line first-line"></div>
+                <div class="line second-line"></div>
+                <div class="line third-line"></div>
+            </div>
+        </div>
+
+        <section class="description">
+            <div class="des-container">
+                <div class="h2">
+                    Welcome to Glassmorhpism Generator
+                </div>
+                <div class="text p2">
+                    “Neumorphism” is a new slang term in design circles — co-created by. — which essentially crosses the words “new” and “skeuomorphism”. Essentially, it's a new, minimal way to design with a soft, extruded plastic look. It's almost as if the interface has been vacuum-formed.
+                </div>
+            </div>
+            <div class="cta-box">
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+                    data-name="bmc-button" data-slug="swarajs" data-color="#FFDD00" data-emoji="" data-font="Inter"
+                    data-text="Buy us a coffee" data-outline-color="#000000" data-font-color="#000000"
+                    data-coffee-color="#ffffff"></script>
                 <a class="h5 cta" href="#">Contact Us</a>
             </div>
         </section>
 
-        <section class="description">
-            <div class="text p2">
-                <div class="h2">
-                    Glassmorphism Generators
-                </div>
-                Glassmorphism is a term used to describe UI design that emphasises light or dark objects, placed on top of colourful backgrounds. A background-blur is placed on the objects which allows the background to shine through – giving it the impression of frosted glass.
-            </div>
-            <div class="cta-box">
-                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="swarajs" data-color="#FFDD00" data-emoji="" data-font="Inter" data-text="Buy us a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
-                <a class="h5 cta" href="#">Contact Us</a>
-            </div>
-        </section>
-        <section>
-                <div class="control-panel">
-                    <div class="tweaks">
-                        <div class="sec-title">Changes</div>
-                        <div class="first-row">
-                            <div class="change color"  style="width: max-content; gap: 20px;">
-                                <div class="change-name">Color</div>
-                                <input type="color" id="color" value="#ffffff">
-                            </div>
-                            <div class="change url">
-                                <div class="change-name">Background URL</div>
-                                <input type="text" name="" id="url" placeholder="Type your URL your..">
-                                <div class="cta" id="set-img">Set Image</div>
-                            </div>
+        <section >
+            <div class="control-panel">
+                <div class="tweaks">
+                    <div class="sec-title">Changes</div>
+                    <div class="first-row">
+                        <div class="change color" style="width: max-content; gap: 20px;">
+                            <div class="change-name">Color</div>
+                            <input type="color" id="color" value="#ffffff">
                         </div>
-                        <div class="changes">
-                            
-                            <div class="change border-radius-value">
-                                <div class="change-name" style="width: 120px;">Border Radius</div>
-                                <input type="range" min="0" max="40" value="12" id="inputBorderRadius">
-                                <div id="borderRadiusChangeValue" class="changeValue">12</div>
-                            </div>
-                            <div class="change blur-value">
-                                <div class="change-name">Blur Value</div>
-                                <input type="range" min="0" max="30" value="16" id="inputBlur">
-                                <div id="blurChangeValue" class="changeValue">16</div>
-                            </div>
-                            <div class="change opcaity">
-                                <div class="change-name">Opcaity</div>
-                                <input type="range" min="0" max="100" value="13" id="inputOpacity">
-                                <div id="opacityChangeValue" class="changeValue">13</div>
-                            </div>
-                            <div class="change saturation">
-                                <div class="change-name">Saturation</div>
-                                <input type="range" min="0" max="200" value="180" id="inputSaturation">
-                                <div id="saturationChangeValue" class="changeValue">180</div>
+                        <div class="change url">
+                            <div class="change-name">Background URL</div>
+                            <input type="text" name="" id="url" placeholder="Type your URL your..">
+                            <div class="cta" id="set-img">Set Image</div>
+                        </div>
+                    </div>
+                    <div class="changes">
+                        <div class="change border-radius-value">
+                            <div class="change-name" style="width: 120px;">Border Radius</div>
+                            <input type="range" min="0" max="40" value="12" id="inputBorderRadius">
+                            <div id="borderRadiusChangeValue" class="changeValue">12</div>
+                        </div>
+                        <div class="change blur-value">
+                            <div class="change-name">Blur Value</div>
+                            <input type="range" min="0" max="30" value="16" id="inputBlur">
+                            <div id="blurChangeValue" class="changeValue">16</div>
+                        </div>
+                        <div class="change opcaity">
+                            <div class="change-name">Opcaity</div>
+                            <input type="range" min="0" max="100" value="13" id="inputOpacity">
+                            <div id="opacityChangeValue" class="changeValue">13</div>
+                        </div>
+                        <div class="change saturation">
+                            <div class="change-name">Saturation</div>
+                            <input type="range" min="0" max="200" value="180" id="inputSaturation">
+                            <div id="saturationChangeValue" class="changeValue">180</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="preview-container">
+                    <div class="preview">
+                        <div class="sec-title">Preview</div>
+                        <div class="prev" id="prev">
+
+                            <div class="card" id="card">
+                                <div class="card-name">Ken Adams</div>
+                                <div class="card-details">
+                                    <div style="width: 100%;">
+                                        <div class="number">xxxx xxxx xxxx xxxx</div>
+                                        <div class="details">
+                                            <div>1681131984984651</div>
+                                            <div>05/32</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
+                </div>
 
-                    <div class="preview-code">
-
-
-                        <div class="code-container">
-                            <div class="code">
-                                <div class="sec-title">CSS</div>
-                                <pre class="css-code" id="code">
+                <div class="code-container">
+                    <div class="code">
+                        <div class="sec-title">CSS</div>
+                        <button class="copy">Copy</button>
+                        <pre class="css-code" id="code">
 <span class="comment">// Styles for Glassmorhpism Card</span>
 <span class="comment">// Copy the code below</span>
 
@@ -106,39 +151,20 @@
                 inset 0 0 5px rgba(255, 255, 255, 0.363),
                 0 10px 40px rgba(0, 0, 0, 0.5);
 }</pre>
-                            </div>
-                        </div>
-                        
-                        <div class="preview-container">
-                            <div class="preview">
-                                <div class="sec-title">Preview</div>
-                                <div class="prev" id="prev">
-
-                                    <div class="card" id="card">
-                                        <div class="card-name">Ken Adams</div>
-                                        <div class="card-details">
-                                            <div style="width: 100%;">
-                                                <div class="number">xxxx xxxx xxxx xxxx</div>
-                                                <div class="details">
-                                                    <div>1681131984984651</div>
-                                                    <div>05/32</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
+
+            </div>
         </section>
         <section class="footer">
             <div class="h3">
                 This is Footer
             </div>
         </section>
-        <script src="/app/js/index.js"></script> 
-        <script src="/app/js/glassMorphism.js"></script> 
+        <script src="/app/js/index.js"></script>
+        <script src="/app/js/glassMorphism.js"></script>
+        <script src="/app/js/CopyButton.js"></script>
     </div>
 </body>
+
 </html>
