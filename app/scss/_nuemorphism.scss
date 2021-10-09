@@ -24,12 +24,12 @@
 
                 .shape_preview{
                     
-                    height: 210px;
-                    width: 210px;
-                    border-radius: 50%;
-                    background: #d3d4d3;
-                    box-shadow:  50px 50px 100px #666666,
-                                 -50px -50px 100px #ffffff;
+                    width: 277px;
+                    height: 277px;
+                    border-radius: 41%;
+                    background: #c9c9c9;
+                    box-shadow: 24px 24px 48px #797979, 
+            -24px -24px 48px #ffffff;
                     
                 }
             }
@@ -145,6 +145,7 @@
                 box-shadow: inset 6px 6px 12px #9496b6,
                             inset -6px -6px 12px #dee0ff;
             }
+           
         }
       
       
@@ -173,4 +174,13 @@
 
 input{
     border: 1px solid white;
+}
+@media only screen and (max-width: 1440px){
+    
+}
+@media only screen and (max-width: 900px){
+    
+}
+@media only screen and (max-width: 700px){
+    
 }

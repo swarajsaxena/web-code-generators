@@ -203,12 +203,12 @@ textarea {
 }
 
 .control-panel-neumorphism .preview-changes .preview-container .prev .shape_preview, .control-panel-neumorphism .preview-changes .changes-container .prev .shape_preview {
-  height: 210px;
-  width: 210px;
-  border-radius: 50%;
-  background: #d3d4d3;
-  -webkit-box-shadow: 50px 50px 100px #666666, -50px -50px 100px #ffffff;
-          box-shadow: 50px 50px 100px #666666, -50px -50px 100px #ffffff;
+  width: 277px;
+  height: 277px;
+  border-radius: 41%;
+  background: #c9c9c9;
+  -webkit-box-shadow: 24px 24px 48px #797979,  -24px -24px 48px #ffffff;
+          box-shadow: 24px 24px 48px #797979,  -24px -24px 48px #ffffff;
 }
 
 .control-panel-neumorphism .preview-changes .changes {
