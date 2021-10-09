@@ -181,7 +181,7 @@ textarea {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 0.5rem;
 }
 
@@ -241,6 +241,7 @@ textarea {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  border-radius: .2rem;
 }
 
 .control-panel-neumorphism .preview-changes .changes .clr input {
@@ -357,12 +358,69 @@ textarea {
   background: #161b29;
 }
 
-.control-panel-neumorphism .code .inline {
-  display: inline;
-}
-
 input {
   border: 1px solid white;
+}
+
+@media only screen and (max-width: 1440px) {
+  .preview-changes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .prev {
+    height: 450px !important;
+    background: black;
+  }
+  .changes {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1rem !important;
+  }
+  .changes input {
+    height: 100% !important;
+  }
+  .changes .clr {
+    width: 100% !important;
+    gap: 4rem;
+  }
+  .changes .clr .color {
+    height: 35px !important;
+    margin: 0 !important;
+    padding: .1rem 0;
+    width: 60% !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .clr {
+    gap: 2rem !important;
+  }
+  .code-container {
+    height: -webkit-max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+  }
+  .code {
+    height: -webkit-max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+    padding: 1rem !important;
+  }
+  .css-code {
+    overflow: hidden;
+    border: 1px solid;
+    font-size: 0.55rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
 }
 
 .control-panel {
